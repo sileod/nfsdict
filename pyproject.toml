@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nfsdict"
+version = "0.1.0"
+description = "NFS-safe persistent dictionary. Atomic file-per-key writes, in-memory read cache."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+authors = [{ name = "Damien Sileo" }]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Filesystems",
+]
+dependencies = [
+    "platformdirs",
+]
+
+[project.urls]
+Homepage = "https://github.com/sileod/nfsdict"
+
+[tool.setuptools]
+py-modules = ["nfsdict"]

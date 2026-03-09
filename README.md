@@ -1,6 +1,6 @@
 # nfsdict
 
-NFS-safe persistent dictionary for Python (CPython & PyPy).
+NFS-safe persistent dictionary for Python 🗃️
 
 One file per key, atomic writes via temp + rename, in-memory read cache so reads never touch NFS after initial load. Corruption of one file loses that key only — never the whole store.
 
